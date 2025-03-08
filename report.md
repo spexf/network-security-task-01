@@ -131,11 +131,6 @@ network-traffic-lab
 ├── client
 │   └── client.Dockerfile
 ├── docker-compose.yml
-├── images
-│   ├── check_tools.png
-│   └── tools_not_installed.png
-├── readme.md
-├── report.md
 ├── result
 │   ├── curlTest.pcap
 │   └── nmapTest.pcap
