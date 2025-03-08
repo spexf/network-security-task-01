@@ -43,6 +43,18 @@ networks:
 To launch the environment, execute the following command:
 `docker-compose up -d`
 
+### Run Listener
+
+For the listener, I use tcpdump that will be listening in web_server container. here's the syntax to set the listener
+
+```bash
+tcpdump -i eth0 tcp -w /output/curlTest.pcap
+```
+
+```bash
+tcpdump -i eth0 -w /output/nmapTest.pcap
+```
+
 ## Discussion
 
 During this practice, I encountered some problem,
