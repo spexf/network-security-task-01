@@ -2,7 +2,15 @@
 
 ## Introduction
 
-_(Provide an overview of the lab session, its objectives, and what will be covered.)_
+### Objectives
+
+- Set up virtual lab environment with Docker
+- Capture traffic between client and web_server
+- analyze the traffic in wireshark
+
+### Overview
+
+Simply in this practice, we have to set up a virtual lab environment with docker, there will be 2 container created in this practice, the first one is client, and the second one is web_server. Then after run the docker container, we have to capture the traffic that created between client and web_server when they're comunicating. Lastly, we will analyze the captured traffic in wireshark.
 
 ## Methodology
 
