@@ -211,3 +211,5 @@ In this capture, communication begins with ARP exchanges at Layer 2. The client 
 ## Conclusion
 
 In summary, this lab session effectively showcased the process of establishing a virtual lab environment through Docker, capturing network traffic, and examining the data using Wireshark. We addressed challenges such as missing tools on the client container and issues capturing traffic on Windows by customizing Docker images and adjusting our configurations. The traffic examination confirmed the correct functionality of network protocols across various OSI layers—from ARP at Layer 2 and TCP negotiations at Layer 4 to HTTP exchanges at Layer 7. Moreover, executing Nmap with the -sC flag offered additional information about the inspected ports with cost that many request will be established to web_server. Overall, this exercise reinforced our understanding of containerized network environments and the importance of detailed traffic analysis in network security tasks.
+
+#### ([RKSA 2023 | Muhammad Ath Thoriq Kurnia Ramadhan | 4332301013](https://github.com/spexf/network-security-task-01/tree/main))
