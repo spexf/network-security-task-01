@@ -45,13 +45,13 @@ To launch the environment, execute the following command:
 
 ## Discussion
 
-So when doing this practice, i've encountered some problem,
+During this practice, I encountered some problem,
 
-- no curl, and nmap installed on client machine
+- curl and nmap were not installed on the client container
   ![Tools Not Installed](images/tools_not_installed.png)
-- windows cant capture traffic that established between the containers
+- Windows could not capture traffic between container
 
-to solve the first problem, i create a new docker file for the client, so we dont have to install the tools whenever we rerun the docker compose. here's the Dockerfile and the modified line on docker-compose.yaml
+To resolve the first issue, I created a new Dockerfile for the client. This ensures that the necessary tools are pre-installed, eliminating the need to reinstall them every time we rerun docker-compose. Below is the Dockerfile and the modified line in docker-compose.yml.
 
 - client.Dockerfile
 
@@ -86,7 +86,7 @@ networks:
     driver: bridge
 ```
 
-then for the second problem, i solve it by use the web_server container to capture the traffic then save it to a directory that binded to windows directory, also i create a new Dockerfile and modify the Docker Compose file to solve this problem.
+To resolve the second issue, I used the web_server container to capture network traffic and saved it to a directory that is bound to a Windows directory. Additionally, I created a new Dockerfile and modified the Docker Compose file to implement this solution.
 
 - web.Dockerfile
 
