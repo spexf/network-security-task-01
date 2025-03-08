@@ -157,7 +157,7 @@ network-traffic-lab
 12   0.000780   172.18.0.3 → 172.18.0.2   TCP 66 60498 → 80 [ACK] Seq=75 Ack=855 Win=64128 Len=0 TSval=86039781 TSecr=1953754760
 ```
 
-- nmapTest.pcap [File PCAP](result/nmapTest.pcap)
+- nmapTest.pcap [File PCAP](https://github.com/spexf/network-security-task-01/raw/refs/heads/main/result/nmapTest.pcap)
 
 ## Conclusion
 
