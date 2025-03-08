@@ -124,6 +124,25 @@ networks:
     driver: bridge
 ```
 
+here is the file structure after the modification
+
+```bash
+network-traffic-lab
+├── client
+│   └── client.Dockerfile
+├── docker-compose.yml
+├── images
+│   ├── check_tools.png
+│   └── tools_not_installed.png
+├── readme.md
+├── report.md
+├── result
+│   ├── curlTest.pcap
+│   └── nmapTest.pcap
+└── web_server
+    └── web.Dockerfile
+```
+
 ## Results and Analysis
 
 _(Present the findings from the lab session. Use bullet points, tables, or code snippets if necessary.)_
