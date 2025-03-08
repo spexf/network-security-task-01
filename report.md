@@ -48,7 +48,7 @@ To launch the environment, execute the following command:
 So when doing this practice, i've encountered some problem,
 
 - no curl, and nmap installed on client machine
-  [!Tools Not Installed](images/tools_not_installed.png)
+  ![Tools Not Installed](images/tools_not_installed.png)
 - windows cant capture traffic that established between the containers
 
 to solve the first problem, i create a new docker file for the client, so we dont have to install the tools whenever we rerun the docker compose. here's the Dockerfile and the modified line on docker-compose.yaml
