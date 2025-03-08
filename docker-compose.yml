@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  web_server:
+    build: 
+      context: web_server
+      dockerfile: web.Dockerfile
+    container_name: web_server
+    volumes:
+      - ./result:/output:rw
+    networks:
+      - my_network
+  client:
+    build:
+      context: client
+      dockerfile: client.Dockerfile
+    container_name: client
+    tty: true 
+    networks:
+      - my_network
+    command: bash
+networks:
+  my_network:
+    driver: bridge
