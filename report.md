@@ -55,6 +55,18 @@ tcpdump -i eth0 tcp -w /output/curlTest.pcap
 tcpdump -i eth0 -w /output/nmapTest.pcap
 ```
 
+### Send Request
+
+I use curl and nmap to make a request to the webserver. this the syntax that i ran:
+
+```bash
+curl http://web_server
+```
+
+```bash
+nmap -sV -sC -p 80 web_server
+```
+
 ## Discussion
 
 During this practice, I encountered some problem,
