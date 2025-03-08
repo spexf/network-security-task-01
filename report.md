@@ -159,9 +159,9 @@ network-traffic-lab
 
 - nmapTest.pcap
 <details>
-    <summary>Click for more</summary>
+    <summary>Click to see full result</summary>
 
-```bash
+```plaintext
 1   0.000000 02:42:ac:12:00:03 → Broadcast    ARP 42 Who has 172.18.0.2? Tell 172.18.0.3
 2   0.000005 02:42:ac:12:00:02 → 02:42:ac:12:00:03 ARP 42 172.18.0.2 is at 02:42:ac:12:00:02
 3   0.149812   172.18.0.3 → 172.18.0.2   TCP 58 45117 → 80 [SYN] Seq=0 Win=1024 Len=0 MSS=1460
