@@ -190,10 +190,12 @@ network-traffic-lab
 ### Analysis
 
 - curlTest.pcap [Click to download file](https://github.com/spexf/network-security-task-01/raw/refs/heads/main/result/curlTest.pcap)
-  From lines 1 to 3, we can observe the container performing a three-way handshake on port 80, which occurs at layer 4. In line 4, the client sends a GET / HTTP/1.1 request to retrieve the home page. Then, in line 8, the web_server sends the web page with a 200 OK status, which occurs at layer 7. Finally, from lines 9 to 12, the communication is gracefully terminated.
+
+From lines 1 to 3, we can observe the container performing a three-way handshake on port 80, which occurs at layer 4. In line 4, the client sends a GET / HTTP/1.1 request to retrieve the home page. Then, in line 8, the web_server sends the web page with a 200 OK status, which occurs at layer 7. Finally, from lines 9 to 12, the communication is gracefully terminated.
 
 - nmapTest.pcap [Click to download file](https://github.com/spexf/network-security-task-01/raw/refs/heads/main/result/nmapTest.pcap)
-  In this capture, communication begins with ARP exchanges at Layer 2. The client sends a TCP SYN at Layer 4 to initiate a connection to port 80. The server responds with a SYN-ACK, but the client sends a RST to cancel the initial attempt. A new TCP handshake is then successfully completed at Layer 4. Next, the client sends a GET request at Layer 7 to retrieve the home page, and the server responds with HTTP 200 OK and the webpage content at Layer 7. Finally, the connection is closed gracefully with FIN and ACK packets at Layer 4, and several new TCP connections are initiated. Additionally, since I executed Nmap with the -sC option, default scripts ran to gather further information about the scanned ports.
+
+In this capture, communication begins with ARP exchanges at Layer 2. The client sends a TCP SYN at Layer 4 to initiate a connection to port 80. The server responds with a SYN-ACK, but the client sends a RST to cancel the initial attempt. A new TCP handshake is then successfully completed at Layer 4. Next, the client sends a GET request at Layer 7 to retrieve the home page, and the server responds with HTTP 200 OK and the webpage content at Layer 7. Finally, the connection is closed gracefully with FIN and ACK packets at Layer 4, and several new TCP connections are initiated. Additionally, since I executed Nmap with the -sC option, default scripts ran to gather further information about the scanned ports.
 
 ## Conclusion
 
