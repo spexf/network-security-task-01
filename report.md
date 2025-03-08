@@ -10,11 +10,38 @@
 
 ### Overview
 
-Simply in this practice, we have to set up a virtual lab environment with docker, there will be 2 container created in this practice, the first one is client, and the second one is web_server. Then after run the docker container, we have to capture the traffic that created between client and web_server when they're comunicating. Lastly, we will analyze the captured traffic in wireshark.
+In this practice, we will set up a virtual lab environment using Docker. Two containers will be created: the first one as a client and the second one as a web server. After running the Docker containers, we will capture the network traffic between the client and the web server during their communication. Finally, we will analyze the captured traffic using Wireshark.
 
 ## Methodology
 
-_(Describe the steps taken to set up the virtual lab and perform basic traffic analysis. Include details on tools, configurations, and procedures used.)_
+### Set Up Virtual Lab Environment with Docker Compose
+
+The first requirement is Docker, so ensure that Docker is installed on the system.  
+Next, save the following code as a `docker-compose.yml` file:
+
+```yaml
+version: "3.8"
+services:
+  web_server:
+    image: nginx:latest
+    container_name: web_server
+    networks:
+      - my_network
+  client:
+    image: ubuntu:latest
+    container_name: client
+    tty: true # Keeps the container running interactively
+    networks:
+      - my_network
+    command: bash # Starts an interactive shell
+
+networks:
+  my_network:
+    driver: bridge
+```
+
+To launch the environment, execute the following command:
+`docker-compose up -d`
 
 ## Results and Analysis
 
